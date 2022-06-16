@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sparks Bank</title>
+        <meta name ="viewport"content="width=device-width ,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabriela&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+    </head>
+    <body>          
+        <section id="header">
+            <div class="container">
+                <div class="logoParent">
+                    <div><img src="image/icon1.jpg" class="logo"></div>
+                    <div class="titlesss" >Sparks Bank</div>
+                </div>
+                <div class="header-text">
+                    <h1>Now get the access of your account </br>from anywhere</h1>
+                    <span class="square"></span>
+                    <p>All in one solution for transfering the money very conveniently with the help of our Sparks Bank System , a online money transfering system to your selected person</p>
+                    <a href="http://localhost/PHP/Sparks%20Foundation%20Project/users.php"><button class="button">Get Started</button></a>
+                    <div class="line">
+                        <span class="line1"></span><br><br>
+                        <span class="line2"></span><br><br>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="http://localhost/PHP/Sparks%20Foundation%20Project/users.php" >OUR CUSTOMERS</a></li>
+                <li><a href="http://localhost/PHP/Sparks%20Foundation%20Project/history.php" >TRANSACTION HISTORY</a></li>
+                <li><a href="http://localhost/PHP/Sparks%20Foundation%20Project/users.php" >TRANSFER MONEY</a></li>
+            </ul>
+        </nav>
+        <img src="image/menu1.png" id="menuBtn">
+
+
+<!---FEATURES--->
+<section id="features">
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="image/customers1.jpg" class="feature-img">
+           <a href="http://localhost/PHP/Sparks%20Foundation%20Project/users.php"> <button class="button" >Our Customers</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="image/history2.jpg" class="feature-img">
+            <a href="http://localhost/PHP/Sparks%20Foundation%20Project/history.php"><button class="button" >Transaction History</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="image/transferMoney.jpg" class="feature-img" id="transferImage">
+            <a href="http://localhost/PHP/Sparks%20Foundation%20Project/users.php"><button class="button" >Transfer Money</button></a>
+        </div>
+    </div>
+    
+</section>
+<!-- FOOTER-->
+
+        <script>
+            var menuBtn=document.getElementById("menuBtn");
+            var sideNav=document.getElementById("sideNav");
+            sideNav.style.right="-250px";
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0px";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                }
+            }
+        </script>
+    </body>
+</html>
